@@ -1,0 +1,14 @@
+spring:
+  security:
+    saml2:
+      relyingparty:
+        registration:
+          ssocircleex:
+            identityprovider:
+              entity-id: https://idp.ssocircle.com
+              singlesignon:
+                sign-request: false
+                url: https://idp.ssocircle.com:443/sso/SSOPOST/metaAlias/publicidp
+              verification:
+                credentials:
+                - certificate-location: classpath:idp.crt
